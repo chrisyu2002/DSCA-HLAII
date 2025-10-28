@@ -1,0 +1,16 @@
+name: iidl-hla
+path: saved_models
+
+train:
+  batch_size: 256
+  num_epochs: 500
+  opt_params:
+    optimizer_cls: Adadelta
+    lr: 0.01
+    weight_decay: 1e-4
+
+valid:
+  batch_size: 256
+
+test:
+  batch_size: 256

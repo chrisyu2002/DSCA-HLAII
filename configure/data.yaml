@@ -1,0 +1,21 @@
+train: data/benchmark.txt
+test: data/warm-start-test.txt
+unseen: data/cold-start-test.txt
+input : data
+pep_esm_train_1: data/pep/esm_3_pep_train_1_to_20w.npy
+pep_esm_train_2: data//pep/esm_3_pep_train_20w_to_40w.npy
+pep_esm_train_3: data/pep/esm_3_pep_train_40w_to_60w.npy
+pep_esm_train_4: data/pep/esm_3_pep_train_60w_to_80w.npy
+pep_esm_train_5: data/pep/esm_3_pep_train_80w_to_end.npy
+pep_esm_test: data/pep/esm_3_pep_test.npy
+pep_esm_unseen: data/pep/esm_3_pep_unseen.npy
+hla_esm_train_1: data/hla/esm_3_hla_train_1_to_20w.npy
+hla_esm_train_2: data/hla/esm_3_hla_train_20w_to_40w.npy
+hla_esm_train_3: data/hla/esm_3_hla_train_40w_to_60w.npy
+hla_esm_train_4: data/hla/esm_3_hla_train_60w_to_80w.npy
+hla_esm_train_5: data/hla/esm_3_hla_train_80w_to_end.npy
+hla_esm_test: data/hla/esm_3_hla_test.npy
+hla_esm_unseen: data/hla/esm_3_hla_unseen.npy
+hla_pseudo_seq: data/hla_dict/hla_pseudo_seq.txt
+hla_full_seq: data/hla_dict/hla_full_seq_dict.txt
+results: results
