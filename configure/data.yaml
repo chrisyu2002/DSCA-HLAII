@@ -1,7 +1,7 @@
 train: data/benchmark.txt
 test: data/warm-start-test.txt
 unseen: data/cold-start-test.txt
-input : data
+input : data/input-test.txt
 pep_esm_train_1: data/pep/esm_3_pep_train_1_to_20w.npy
 pep_esm_train_2: data//pep/esm_3_pep_train_20w_to_40w.npy
 pep_esm_train_3: data/pep/esm_3_pep_train_40w_to_60w.npy

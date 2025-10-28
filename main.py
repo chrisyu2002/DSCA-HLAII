@@ -76,7 +76,7 @@ def main(data_cnf, model_cnf, mode, num_models):
     get_data_fn_core = partial(get_data_core, hla_name_seq = hla_name_seq)
 
     if mode == 'input':
-        input_path = Path(data_cnf['input'])/f'input-test.txt'
+        input_path = Path(data_cnf['input'])
         result_path =  Path(data_cnf['results'])/f'input-test-{model_name}.txt'
         CUTOFF = 1.0 - math.log(500, 50000)
 
