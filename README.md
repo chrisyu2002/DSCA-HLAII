@@ -21,11 +21,8 @@ The interaction between peptides and human leukocyte antigen class II (HLA-II) m
 ## 1.1 Create conda environment
 
 ```
-
 conda create -n DSCA-HLAII python=3.10
-
 conda activate DSCA-HLAII
-
 ```
 
 
@@ -35,15 +32,12 @@ conda activate DSCA-HLAII
 We recommend installing the environment using the provided `environment.yaml` file to ensure compatibility:
 
 ```
-
 conda env update -f environment.yaml
-
 ```
 
 If this approach fails or Conda is not available, you can manually install the main dependencies as listed below:
 
 ```
-
 python  3.10
 
 numpy 1.26.2
@@ -67,29 +61,18 @@ logzero 1.7.0
 ruamel-yaml 0.18.10
 
 click 8.1.8
-
 ```
 
 
 
 ## 1.3 Tools
 
-A large protein language model are required: 
+A large protein language model ESM C(600M) is required.
+
+How to install ESM C(600M): (More information, please see **[SPYfighting/esm-C (github.com)](https://github.com/SPYfighting/esm-C)**)
 
 ```
-
-ESM C(600M) \\
-
-```
-
-How to install ESM C(600M):
-
-Download (More information, please see **[SPYfighting/esm-C (github.com)](https://github.com/SPYfighting/esm-C)**)
-
-```
-
 pip install esm
-
 ```
 
 
@@ -97,9 +80,7 @@ pip install esm
 ## 1.4 Install DSCA-HLAII
 
 ```
-
 git clone git@github.com:chrisyu2002/DSCA-HLAII.git
-
 ```
 
 
@@ -107,13 +88,9 @@ git clone git@github.com:chrisyu2002/DSCA-HLAII.git
 Besides, due to the file size limitation of Git LFS, the pre-trained (ESM C) feature files of peptide sequences and HLA-II sequences used for training and testing in DSCA-HLAII are available through the **https://pan.quark.cn/s/5e60ba8f95a0** (about 1.1TB). However, this does not affect the testing of the model.
 
 ```
-
 mv esm_3_pep_train_1_to_20w.npy data/pep/
-
 mv esm_3_pep_train_20_to_40w.npy data/pep/
-
 ......
-
 ```
 
 
@@ -143,9 +120,7 @@ The procedure for predicting peptide–HLA-II presentation probability and bindi
 (3) Run `main.py` to perform the prediction.
 
 ```
-
 python main.py
-
 ```
 
 
@@ -172,7 +147,7 @@ In addition, if you have any further questions about DSCA-HLAII, please feel fre
 
 
 
-\# 4 Citation
+# 4 Citation
 
 
 
